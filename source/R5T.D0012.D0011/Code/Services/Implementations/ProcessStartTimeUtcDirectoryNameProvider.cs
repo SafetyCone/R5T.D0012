@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using R5T.D0008;
-using R5T.D0011;
+using R5T.D0011;using R5T.T0064;
 
 
 namespace R5T.D0012.D0011
-{
-    public class ProcessStartTimeUtcDirectoryNameProvider : IProcessStartTimeUtcDirectoryNameProvider
+{[ServiceImplementationMarker]
+    public class ProcessStartTimeUtcDirectoryNameProvider : IProcessStartTimeUtcDirectoryNameProvider,IServiceImplementation
     {
         private IProcessStartTimeUtcProvider ProcessStartTimeUtcProvider { get; }
         private ITimestampUtcDirectoryNameProvider TimestampUtcDirectoryNameProvider { get; }
